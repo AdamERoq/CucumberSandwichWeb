@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {background:  rgb(146, 225, 148);}
+        body {background-color: rgb(157, 172, 255); font-size: 40px;}
+        h1   {color: blue; font-family: sans-serif; font-size: 70px;}
+        p    {color: purple; font-size: 30px;}
+        </style>
+</head>
+<body>
+   
+    <div>
+        <header>
+            <nav>
+                <a href = '/ingredients.html'>ingredients</a>
+            </nav>
+        </header>
+        <h1>
+            Cucumber Sandwhiches Are Great!
+        </h1>
+    </div>
+
+    <div>
+        
+        <body>
+
+            <form  >New <a href = '/ingredients.html'>ingredients</a> to add to the greatness of a cucumber sandwhich element:
+                <br>
+                <input id="food" type="text" name="ingedient" value=" ">
+                <br>                
+                </form>
+
+            <button onclick="myFunction()">Click me</button>
+
+            <p id="list"></p>
+
+            <script>
+
+                let sandwhich = ["bread", " butter", " cucumber"];
+                function myFunction() {
+                    let newArray = document.getElementById("food").value;
+                    sandwhich.push(newArray);
+                    document.getElementById("list").innerHTML = sandwhich;
+                    console.log(sandwhich);
+                }
+                
+                //myFunction(); // initialize list innerHTML    
+
+        </script>
+
+    </div>
+    <div>
+        <img src="images.jfif" >
+    </div>
+
+
+    
+</body>
+</html>
