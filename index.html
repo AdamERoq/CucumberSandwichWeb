@@ -13,14 +13,14 @@
         </style>
 </head>
 <body>
-   
+ 
     <div>
         <header>
             <nav>
-                <a href = '/ingredients.html'>ingredients</a>
+                <a id = 'ingredients' href = '/ingredients.html'>ingredients</a>
             </nav>
         </header>
-        <h1>
+        <h1 id = 'header'>
             Cucumber Sandwhiches Are Great!
         </h1>
     </div>
@@ -57,7 +57,28 @@
     <div>
         <img src="images.jfif" >
     </div>
-
+    <script>
+        function changeColor() {
+            document.getElementById("textColor").style.color = "red";
+        }
+        </script>
+            <div>
+                <h1 id="textColor" onclick="changeColor()"><b>
+                    Ingredients 
+                    <button id = 'button'>(click to change color)</button>
+                </b>
+                </h1>
+            </div>
+        
+            <div>
+                <ol>
+                    <li>Two pieces of bread.</li>
+                    <li>Real butter.</li>
+                    <li>Cucumber.</li>
+                </ol>
+                <img src = 'cucumbersandwhich.jpg' alt = 'A cucmber sandwhich'>
+        
+            </div>
 
     
 </body>
